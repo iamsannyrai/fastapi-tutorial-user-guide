@@ -38,7 +38,6 @@ async def get_model(model_name: ModelName):
 
 
 # path parameters containing paths
-
 @app.get('/files/{file_path:path}')
-async def read_files(file_path:str):
-    return {"file_path":file_path}
+async def read_files(file_path: str):
+    return {"file_path": file_path}
